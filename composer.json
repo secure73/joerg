@@ -1,0 +1,5 @@
+{
+    "require": {
+        "gemvc/stcms": "^1.6"
+    }
+}
