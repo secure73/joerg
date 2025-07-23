@@ -13,17 +13,17 @@
         <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-jsx.min.js"></script>
 
     </head>
-    <body class="relative min-h-screen overflow-x-hidden bg-cover bg-center" style="background-image: url('/assets/images/fuji.avif');">
+    <body class="relative min-h-screen flex flex-col overflow-x-hidden bg-cover bg-center" style="background-image: url('/assets/images/fuji.avif');">
         {% include 'navbar.twig' %}
         <!-- Main Content -->
-        <main class="max-w-4xl mx-auto py-12 px-8 bg-white bg-opacity-80 rounded-2xl shadow-2xl mt-16 mb-16 backdrop-blur-md border border-white" style="box-shadow: 0 8px 32px 0 rgba(0,0,0,0.15);">
+        <main class="flex-grow max-w-4xl mx-auto py-12 px-8 bg-white bg-opacity-80 rounded-2xl shadow-2xl mt-16 mb-16 backdrop-blur-md border border-white" style="box-shadow: 0 8px 32px 0 rgba(0,0,0,0.15);">
             {% block content %}{% endblock %}
         </main>
         <!-- Footer -->
-        <footer class="bg-black bg-opacity-60 text-white mt-12 border-t border-white">
+        <footer class="bg-black bg-opacity-60 text-white border-t border-white w-full">
             <div class="max-w-7xl mx-auto py-6 px-4">
                 <div class="text-center">
-                    <p class="font-semibold tracking-wide">&copy; 2025 STCMS made with love by Ali Khorsandfard</p>
+                    <p class="font-semibold tracking-wide">&copy; 2025 Ali Khorsandfard</p>
                 </div>
             </div>
         </footer>
