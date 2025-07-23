@@ -1,22 +1,18 @@
 <!-- Navigation -->
-<nav class="bg-[#142447] bg-opacity-95 border-b-2 border-[#FFD700] shadow-2xl rounded-b-3xl mx-auto max-w-3xl mt-6 mb-8 px-6 py-2 flex items-center justify-between floating-navbar" style="box-shadow: 0 4px 24px 0 rgba(215,38,56,0.15);">
-    <!-- Logo and Brand with Gold Sakura Icon -->
+<nav class="backdrop-blur bg-white bg-opacity-80 rounded-2xl mx-auto max-w-4xl mt-8 mb-10 px-8 py-3 flex items-center justify-between shadow-lg border border-gray-200">
+    <!-- Logo and Brand -->
     <div class="flex items-center space-x-3">
-        <svg width="32" height="32" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="32" cy="32" r="28" fill="#FFD700"/>
-            <path d="M32 12 Q36 24 48 20 Q40 32 52 36 Q40 36 44 48 Q32 40 20 48 Q24 36 12 36 Q24 32 16 20 Q28 24 32 12 Z" fill="#D72638"/>
-        </svg>
-        <a href="/{{ lang ?? 'en' }}/" class="text-2xl font-extrabold text-[#FFD700] tracking-tight hover:text-[#D72638] transition" style="font-family: 'Noto Serif JP', serif; letter-spacing: 0.03em;">Jörg Feller</a>
+        <span class="text-2xl font-extrabold text-gray-800 tracking-tight" style="font-family: 'Noto Sans', sans-serif;">Jörg Feller</span>
     </div>
     <!-- Desktop Navigation -->
-    <div class="hidden md:flex items-center space-x-6">
-        <a href="/{{ lang ?? 'en' }}/" class="text-[#FFD700] hover:text-[#D72638] px-3 py-2 rounded-md text-base font-semibold transition">
+    <div class="hidden md:flex items-center space-x-8">
+        <a href="/{{ lang ?? 'en' }}/" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md text-base font-semibold transition">
             {% if lang == 'de' %}Startseite{% else %}Home{% endif %}
         </a>
-        <a href="/{{ lang ?? 'en' }}/about" class="text-[#FFD700] hover:text-[#D72638] px-3 py-2 rounded-md text-base font-semibold transition">
+        <a href="/{{ lang ?? 'en' }}/about" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md text-base font-semibold transition">
             {% if lang == 'de' %}Über mich{% else %}About{% endif %}
         </a>
-        <a href="/{{ lang ?? 'en' }}/contact" class="text-[#FFD700] hover:text-[#D72638] px-3 py-2 rounded-md text-base font-semibold transition">
+        <a href="/{{ lang ?? 'en' }}/contact" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md text-base font-semibold transition">
             {% if lang == 'de' %}Kontakt{% else %}Contact{% endif %}
         </a>
     </div>
@@ -26,15 +22,10 @@
     </div>
     <!-- Mobile menu button (minimalist) -->
     <div class="md:hidden flex items-center">
-        <button class="text-[#FFD700] hover:text-[#D72638] focus:outline-none">
+        <button class="text-gray-800 hover:text-blue-600 focus:outline-none">
             <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
         </button>
     </div>
-</nav>
-<style>
-    .floating-navbar {
-        backdrop-filter: blur(8px);
-    }
-</style> 
+</nav> 
