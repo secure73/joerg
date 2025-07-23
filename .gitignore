@@ -1,0 +1,24 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# PHP
+vendor/
+composer.lock
+composer.phar
+
+# Build artifacts
+dist/
+build/
+public/assets/
+.DS_Store
+.env
+.idea/
+.vscode/
+
+# OS
+Thumbs.db 
